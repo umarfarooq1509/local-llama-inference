@@ -67,16 +67,15 @@ This project uses Git for version control. Basic commands:
 - `run_server.bat` - Script to start server
 - `.gitignore` - Excludes large files
 
-## Git Learning Guide
+## GitHub Setup
 
-Since you're new to Git, here are basic commands to manage your project:
+To upload this project to GitHub:
 
-- **Check status**: `git status` - See what files have changed.
-- **Stage changes**: `git add .` - Stage all changes for commit.
-- **Commit changes**: `git commit -m "Your message"` - Save changes with a message.
-- **View history**: `git log` - See commit history.
-- **Create GitHub repo**: Go to GitHub.com, create new repo, copy URL.
-- **Add remote**: `git remote add origin <URL>`
-- **Push to GitHub**: `git push -u origin main` - Upload to GitHub.
-
-Practice by making small changes and committing them.
+1. Create a new repository on GitHub.com (name: `local-llama-inference`)
+2. Copy the repository URL
+3. Run in terminal:
+   ```
+   git remote add origin <your-repo-url>
+   git push -u origin main
+   ```
+4. Authenticate with your GitHub credentials when prompted.
