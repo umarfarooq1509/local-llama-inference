@@ -78,4 +78,10 @@ To upload this project to GitHub:
    git remote add origin <your-repo-url>
    git push -u origin main
    ```
-4. Authenticate with your GitHub credentials when prompted.
+## Troubleshooting
+
+- If build fails with "Failed to run MSBuild command", install Visual Studio Build Tools as described in prerequisites.
+- Ensure CUDA toolkit version matches your GPU drivers (13.1 detected).
+- For CMake issues, the zip is downloaded in the project folder; add to PATH if needed.
+- Model download may require Hugging Face login for large files; use the manual download link.
+- If GitHub push fails, ensure you have a personal access token set up.
