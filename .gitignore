@@ -1,0 +1,8 @@
+models/
+build/
+*.exe
+*.dll
+*.lib
+*.obj
+__pycache__/
+*.pyc
