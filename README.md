@@ -8,7 +8,7 @@ This project sets up a local environment to run the Llama-3.1-8B-Instruct model 
 - Python 3.8+ (installed: 3.13.5)
 - Git (installed)
 - NVIDIA GPU with CUDA support (1660 Super, CUDA 13.1 detected)
-- Visual Studio Build Tools (for C++ compilation)
+- Visual Studio Build Tools (download from https://visualstudio.microsoft.com/downloads/, select "Build Tools for Visual Studio")
 - CMake (install from https://cmake.org/download/)
 - CUDA Toolkit (if not installed, download from https://developer.nvidia.com/cuda-downloads)
 
@@ -67,8 +67,16 @@ This project uses Git for version control. Basic commands:
 - `run_server.bat` - Script to start server
 - `.gitignore` - Excludes large files
 
-## Troubleshooting
+## Git Learning Guide
 
-- If build fails, ensure CUDA toolkit matches driver version.
-- For CMake issues, install latest version.
-- Model download may take time; use a download manager if needed.
+Since you're new to Git, here are basic commands to manage your project:
+
+- **Check status**: `git status` - See what files have changed.
+- **Stage changes**: `git add .` - Stage all changes for commit.
+- **Commit changes**: `git commit -m "Your message"` - Save changes with a message.
+- **View history**: `git log` - See commit history.
+- **Create GitHub repo**: Go to GitHub.com, create new repo, copy URL.
+- **Add remote**: `git remote add origin <URL>`
+- **Push to GitHub**: `git push -u origin main` - Upload to GitHub.
+
+Practice by making small changes and committing them.
