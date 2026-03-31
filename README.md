@@ -31,9 +31,15 @@ This project sets up a local environment to run the Llama-3.1-8B-Instruct model 
 
 3. **Download the Model**
    - Create `models` folder
-   - Download the Q4_K_M quantized model (~4.9GB):
+   - Download the Q4_K_M quantized model (~4.9GB) from Hugging Face:
+     - Go to https://huggingface.co/bartowski/Llama-3.1-8B-Instruct-GGUF
+     - Download `Llama-3.1-8B-Instruct-Q4_K_M.gguf`
+     - Place it in the `models` folder
+   - Alternatively, use Python (after installing huggingface_hub):
      ```
-     curl -L https://huggingface.co/bartowski/Llama-3.1-8B-Instruct-GGUF/resolve/main/Llama-3.1-8B-Instruct-Q4_K_M.gguf -o models/Llama-3.1-8B-Instruct-Q4_K_M.gguf
+     pip install huggingface_hub
+     huggingface-cli login  # If needed for large files
+     python -c "from huggingface_hub import hf_hub_download; hf_hub_download(repo_id='bartowski/Llama-3.1-8B-Instruct-GGUF', filename='Llama-3.1-8B-Instruct-Q4_K_M.gguf', local_dir='models', local_dir_use_symlinks=False)"
      ```
 
 4. **Run the Server**
